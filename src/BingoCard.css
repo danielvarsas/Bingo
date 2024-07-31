@@ -1,0 +1,25 @@
+/* src/BingoCard.css */
+.bingo-card {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .bingo-card.clicked::after {
+    content: 'X';
+    color: green;
+    font-size: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.5;
+  }
+  
